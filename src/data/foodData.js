@@ -51,11 +51,11 @@ export const foodData = {
   drinks: {
     mojito: {
       name: "Classic Mojito",
-      image: img("mojito.webp"),
+      image: img("mojito-menu.webp"),
     },
     shake: {
       name: "Creamy Shake",
-      image: img("shake.webp"),
+      image: img("shake-menu.webp"),
     },
   },
 
@@ -189,7 +189,7 @@ export const menuData = {
         name: "Gourmet Burger",
         price: "₹350",
         desc: "Brioche bun, double patty, caramelized onions.",
-        image: menuImg("burger.webp"),
+        image: menuImg("burger-menu.webp"),
         veg: false,
       },
       {
