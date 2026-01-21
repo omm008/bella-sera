@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this at the top of your CSS */
+@font-face {
+  font-family: 'BellaLogo';
+  src: url('/src/assets/fonts/Callheart.otf') format('opentype'); 
+  /* Use format('truetype') if it is a .ttf file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Utility class to use it */
+.font-logo {
+  font-family: 'BellaLogo', sans-serif;
+}
+
+html,
+body {
+  background-color: #f4f1ea; /* sera-cream */
+  color: #1c1c1c; /* sera-charcoal */
+  overflow-x: hidden; /* Critical for scroll animations */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar for that app-like feel (optional, clean look) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cdcbc4;
+  border-radius: 4px;
+}
