@@ -8,7 +8,7 @@ const img = (fileName) =>
 
 // Helper for the "Menu" specific folder (Menu Page)
 const menuImg = (fileName) =>
-  new URL(`../assets/images/menu/${fileName}`, import.meta.url).href;
+  new URL(`../assets/images/${fileName}`, import.meta.url).href;
 
 export const foodData = {
   /* =========================
@@ -17,13 +17,13 @@ export const foodData = {
   ramen: {
     name: "Spicy Miso Ramen",
     description: "Rich broth, soft egg, chili oil",
-    bowl: img("ramen.png"), // From main images folder
+    bowl: img("ramen.webp"), // From main images folder
 
     floatables: {
-      egg: img("egg.png"),
-      nori: img("nori.png"),
-      naruto: img("naruto.png"),
-      chopsticks: img("chopstick.png"), // Fixed: singular 'chopstick'
+      egg: img("egg.webp"),
+      nori: img("nori.webp"),
+      naruto: img("naruto.webp"),
+      chopsticks: img("chopstick.webp"), // Fixed: singular 'chopstick'
     },
   },
 
@@ -33,15 +33,15 @@ export const foodData = {
   featured: {
     pizza: {
       name: "Woodfired Pizza",
-      image: img("pizza.png"),
+      image: img("pizza.webp"),
     },
     momos: {
       name: "Steamed Momos",
-      image: img("momos.png"),
+      image: img("momos.webp"),
     },
     burger: {
       name: "Gourmet Burger",
-      image: img("burger.png"),
+      image: img("burger.webp"),
     },
   },
 
@@ -51,11 +51,11 @@ export const foodData = {
   drinks: {
     mojito: {
       name: "Classic Mojito",
-      image: img("mojito.png"),
+      image: img("mojito.webp"),
     },
     shake: {
       name: "Creamy Shake",
-      image: img("shake.png"),
+      image: img("shake.webp"),
     },
   },
 
@@ -64,18 +64,18 @@ export const foodData = {
      ========================= */
   accents: {
     herbs: {
-      basil: img("basil.png"),
-      mint: img("mint.png"),
-      coriander: img("coriander.png"),
+      basil: img("basil.webp"),
+      mint: img("mint.webp"),
+      coriander: img("coriander.webp"),
     },
     spices: {
-      chilli: img("chilli.png"),
-      garlic: img("garlic.png"),
-      clove: img("clove.png"),
+      chilli: img("chilli.webp"),
+      garlic: img("garlic.webp"),
+      clove: img("clove.webp"),
     },
     grains: {
-      coffee: img("coffee.png"),
-      flour: img("flour.png"),
+      coffee: img("coffee.webp"),
+      flour: img("flour.webp"),
     },
   },
 
@@ -84,8 +84,8 @@ export const foodData = {
      ========================= */
   environment: {
     surface: img("surface.jpeg"),
-    kitchen: img("kitchen.png"),
-    cafe: img("cafe.png"),
+    kitchen: img("kitchen.webp"),
+    cafe: img("cafe.webp"),
   },
 };
 
@@ -102,7 +102,7 @@ export const menuData = {
         name: "Spicy Miso Ramen",
         price: "₹450",
         desc: "Rich pork broth, soft egg, chili oil.",
-        image: menuImg("ramen-miso.png"),
+        image: menuImg("ramen-miso.webp"),
         veg: false,
       },
       {
@@ -110,7 +110,7 @@ export const menuData = {
         name: "Shoyu Truffle",
         price: "₹520",
         desc: "Soy broth, truffle oil, nori sheet.",
-        image: menuImg("ramen-shoyu.png"),
+        image: menuImg("ramen-shoyu.webp"),
         veg: false,
       },
       {
@@ -118,7 +118,7 @@ export const menuData = {
         name: "Veg Tantanmen",
         price: "₹400",
         desc: "Spicy sesame broth, soy mince, bok choy.",
-        image: menuImg("ramen-veg.png"),
+        image: menuImg("ramen-veg.webp"),
         veg: true,
       },
     ],
@@ -131,7 +131,7 @@ export const menuData = {
         name: "Classic Margherita",
         price: "₹550",
         desc: "San Marzano tomato, buffalo mozzarella, basil.",
-        image: menuImg("margherita.png"),
+        image: menuImg("margherita.webp"),
         veg: true,
       },
       {
@@ -139,7 +139,7 @@ export const menuData = {
         name: "Spicy Pepperoni",
         price: "₹650",
         desc: "Italian pepperoni, hot honey, chili flakes.",
-        image: menuImg("pepperoni.png"),
+        image: menuImg("pepperoni.webp"),
         veg: false,
       },
       {
@@ -147,7 +147,7 @@ export const menuData = {
         name: "Exotic Veg",
         price: "₹590",
         desc: "Bell peppers, olives, jalapeños, feta.",
-        image: menuImg("exotic-pizza.png"),
+        image: menuImg("exotic-pizza.webp"),
         veg: true,
       },
     ],
@@ -160,7 +160,7 @@ export const menuData = {
         name: "Crystal Dimsum",
         price: "₹380",
         desc: "Translucent wrapper, water chestnut, mushroom.",
-        image: menuImg("crystal-momo.png"),
+        image: menuImg("crystal-momo.webp"),
         veg: true,
       },
       {
@@ -168,7 +168,7 @@ export const menuData = {
         name: "Steamed Momos",
         price: "₹320",
         desc: "Traditional vegetable filling, sesame chutney.",
-        image: menuImg("steam-momo.png"),
+        image: menuImg("steam-momo.webp"),
         veg: true,
       },
       {
@@ -176,7 +176,7 @@ export const menuData = {
         name: "Pan Fried Momos",
         price: "₹350",
         desc: "Crispy bottom, spicy schezwan glaze.",
-        image: menuImg("fried-momo.png"),
+        image: menuImg("fried-momo.webp"),
         veg: true,
       },
     ],
@@ -189,7 +189,7 @@ export const menuData = {
         name: "Gourmet Burger",
         price: "₹350",
         desc: "Brioche bun, double patty, caramelized onions.",
-        image: menuImg("burger.png"),
+        image: menuImg("burger.webp"),
         veg: false,
       },
       {
@@ -197,7 +197,7 @@ export const menuData = {
         name: "Grilled Sandwich",
         price: "₹280",
         desc: "Sourdough, pesto, mozzarella, tomato.",
-        image: menuImg("sandwich.png"),
+        image: menuImg("sandwich.webp"),
         veg: true,
       },
     ],
@@ -210,7 +210,7 @@ export const menuData = {
         name: "Classic Mojito",
         price: "₹250",
         desc: "White rum, fresh mint, lime wedges, soda.",
-        image: menuImg("mojito.png"),
+        image: menuImg("mojito.webp"),
         veg: true,
       },
       {
@@ -218,7 +218,7 @@ export const menuData = {
         name: "Oreo Shake",
         price: "₹290",
         desc: "Vanilla bean ice cream, crushed oreos.",
-        image: menuImg("shake.png"),
+        image: menuImg("shake.webp"),
         veg: true,
       },
       {
@@ -226,7 +226,7 @@ export const menuData = {
         name: "Artisan Coffee",
         price: "₹200",
         desc: "Single origin arabica, freshly brewed.",
-        image: menuImg("coffee.png"),
+        image: menuImg("coffee-cup.webp"),
         veg: true,
       },
     ],
