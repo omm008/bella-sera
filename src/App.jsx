@@ -6,6 +6,8 @@ import Order from "./pages/Order";
 import Reserve from "./pages/Reserve";
 import Story from "./pages/Story";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path="/reserve" element={<Reserve />} />
         <Route path="/story" element={<Story />} />
       </Routes>
+      <ScrollToTop />
+      <Footer />
     </BrowserRouter>
   );
 };
