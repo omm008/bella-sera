@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { foodData } from "../data/foodData";
 import {
   MapPin,
   Phone,
@@ -27,9 +28,16 @@ const Footer = () => {
           <div className="md:col-span-5 flex flex-col justify-between">
             <div>
               {/* Big Logo */}
-              <h2 className="font-logo text-5xl md:text-7xl mb-6 tracking-tighter">
-                Bella Sera
-              </h2>
+              <div className="flex flex-row items-center  ">
+                <div className="w-[18vw] md:w-[10vw] bg-green-900 rounded-full overflow-hidden aspect-square">
+                  <img
+                    className="scale-105"
+                    src={foodData.logo.image}
+                    alt={foodData.logo.name}
+                  />
+                </div>
+              </div>
+
               {/* Short Note */}
               <p className="font-serif text-lg md:text-xl italic leading-relaxed text-sera-stone/80 max-w-md">
                 "Where the warmth of an Italian evening meets the soul of Asian

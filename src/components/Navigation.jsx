@@ -70,11 +70,13 @@ const MobileNav = ({ isScrolled, cartCount }) => (
         )}
 
         {/* Center: The Logo */}
-        <div className="z-10">
-          <span className="font-logo text-lg tracking-wide whitespace-nowrap">
-            {isScrolled ? "BS" : "Bella Sera"}
-          </span>
-        </div>
+        <Link to="/">
+          <div className="z-10">
+            <span className="font-logo text-lg tracking-wide whitespace-nowrap">
+              {isScrolled ? "Bella Sera" : "Bella Sera"}
+            </span>
+          </div>
+        </Link>
 
         {/* Removed Search Icon from Right Side */}
       </motion.div>

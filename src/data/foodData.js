@@ -11,6 +11,10 @@ const menuImg = (fileName) =>
   new URL(`../assets/images/${fileName}`, import.meta.url).href;
 
 export const foodData = {
+  logo: {
+    name: "Bella Sera",
+    image: img("logo.webp"),
+  },
   /* =========================
       HERO — SIGNATURE RAMEN
      ========================= */
@@ -53,9 +57,9 @@ export const foodData = {
       name: "Classic Mojito",
       image: img("mojito-menu.webp"),
     },
-    shake: {
+    shake_menu: {
       name: "Creamy Shake",
-      image: img("shake-menu.webp"),
+      image: img("shake.webp"),
     },
   },
 
@@ -83,7 +87,7 @@ export const foodData = {
       TEXTURE & HUMAN ELEMENT
      ========================= */
   environment: {
-    surface: img("surface.jpeg"),
+    surface: img("surface.webp"),
     kitchen: img("kitchen.webp"),
     cafe: img("cafe.webp"),
   },
@@ -218,7 +222,7 @@ export const menuData = {
         name: "Oreo Shake",
         price: "₹290",
         desc: "Vanilla bean ice cream, crushed oreos.",
-        image: menuImg("shake.webp"),
+        image: menuImg("shake-glass.webp"),
         veg: true,
       },
       {

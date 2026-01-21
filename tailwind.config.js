@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "sera-cream": "#F4F1EA", // The base "paper" texture color
-        "sera-stone": "#CDCBC4", // Subtle borders/accents
-        "sera-charcoal": "#1C1C1C", // Primary text (softer than black)
+        "sera-cream": "#778961", // The base "paper" texture color
+        "sera-stone": "#C5D89D", // Subtle borders/accents
+        "sera-charcoal": "#492828", // Primary text (softer than black)
         "sera-red": "#B93627", // The chili/appetite accent
+        "sera-green": "#97B067", // Primary text (softer than black)
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"], // Clean UI text
